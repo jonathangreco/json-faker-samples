@@ -1,0 +1,22 @@
+{
+  "type": "array",
+  "minItems": 100,
+  "maxItems": 100,
+  "items": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "faker": "name.findName"
+      },
+      "email": {
+        "type": "string",
+        "faker": "internet.email"
+      }
+    },
+    "required": [
+      "name",
+      "email"
+    ]
+  }
+}
